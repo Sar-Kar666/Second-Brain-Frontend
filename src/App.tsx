@@ -1,12 +1,15 @@
 import './App.css'
 import { Button } from './component/ui/Button'
+import { PlusIcon } from './icons/PlusIcon'
+import { ShareIcon } from './icons/ShareIcon'
 
 function App() {
   
 
   return (
     <>
-     <Button variant="primary" text="share" size="lg"/>
+     <Button startIcon={<PlusIcon size="lg"/>}   variant="primary" text="share" size="sm" endIcon={<ShareIcon size="lg"/>}/>
+   
     </>
   )
 }
